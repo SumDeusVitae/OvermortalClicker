@@ -1,5 +1,6 @@
 import pyautogui
 import time
+import win32api
 
 #Global
 counter = 0
@@ -9,7 +10,8 @@ def findnClick(task):
     try:
         xm,ym = pyautogui.locateCenterOnScreen(f"{task}.png", confidence=0.7)
         fw = pyautogui.getActiveWindow()
-        pyautogui.mouseUp()
+        if win32api.GetKeyState(0x01)<0: #if mouse left button is pressed
+            pyautogui.mouseUp()        
         lastx, lasty = pyautogui.position()
         pyautogui.click(xm, ym)
         print(f"Found {task}.png")
