@@ -3,7 +3,7 @@ import time
 import win32api
 
 #Global
-counter = 0
+counter: int = 0
 
 #function find and click
 def findnClick(task):
@@ -27,10 +27,10 @@ def findnClick(task):
         print(f"Couldn't find {task}.png")
 
 # Our file names
-challange = 'chalNew'
-back = 'leaveNew'
-confirm = 'confirm'
-skip = 'nextStage'
+challange: str = 'chalNew'
+back: str = 'leaveNew'
+confirm: str = 'confirm'
+skip: str = 'nextStage'
 
 # Our demon
 while(True):
@@ -41,7 +41,3 @@ while(True):
     # findnClick(skip)
     time.sleep(1)
 
-#Scenario
-
-# 1 Check if we have challange
-# 2 I

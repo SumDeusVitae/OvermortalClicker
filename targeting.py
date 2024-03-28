@@ -31,11 +31,14 @@ def lookFor():
         #  main
 
 while(True):
-    pyautogui.click(look('map'))
-    while(look('target') == 0):         
-        lookFor()
-        time.sleep(0.2)
-    pyautogui.click(look('target'))
-    pyautogui.click(look('fight'))
-    time.sleep(15)
+    coords = look('map')
+    if(coords != 0 ):
+        pyautogui.click(look('map'))
+        while(look('target') == 0):         
+            lookFor()
+            time.sleep(0.2)
+        pyautogui.click(look('target'))
+        pyautogui.click(look('fight'))
+        time.sleep(15 + random.randint(0,18)*0.3)
+    time.sleep(1)
 
