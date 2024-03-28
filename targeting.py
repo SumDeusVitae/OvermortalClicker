@@ -1,4 +1,4 @@
-import pyautogui
+import pyautogui # type: ignore[import-untyped]
 import time
 import random
 

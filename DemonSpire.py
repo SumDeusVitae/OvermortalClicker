@@ -1,6 +1,6 @@
-import pyautogui
+import pyautogui # type: ignore[import-untyped]
 import time
-import win32api
+import win32api # type: ignore[import-untyped]
 
 #Global
 counter: int = 0

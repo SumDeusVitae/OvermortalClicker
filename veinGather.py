@@ -1,8 +1,8 @@
-import pyautogui
+import pyautogui # type: ignore[import-untyped]
 import time
-import win32api
-from pytesseract import pytesseract 
-from PIL import Image 
+import win32api # type: ignore[import-untyped]
+from pytesseract import pytesseract # type: ignore[import-untyped]
+from PIL import Image # type: ignore[import-untyped]
 
 # 
 # Go to Realm
